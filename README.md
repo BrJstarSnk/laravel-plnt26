@@ -7,6 +7,43 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Template Overview
+
+This repository is a Laravel starter template for:
+
+- Web login with an admin panel for users, roles, and permissions.
+- A public Swagger documentation page.
+- A monolith layout that stays ready for future API extraction.
+
+## App Structure
+
+The app is organized with an application layer that keeps controllers thin:
+
+```
+app/
+	Actions/
+	DTOs/
+	Services/
+	Repositories/
+	Exceptions/
+	Traits/
+	Http/
+		Controllers/
+			Api/
+			Web/
+```
+
+## Docker (Sail)
+
+Sail is included for local development. You can use Docker or run locally.
+
+Example setup with MySQL:
+
+```bash
+composer require laravel/sail --dev
+php artisan sail:install --with=mysql
+```
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
