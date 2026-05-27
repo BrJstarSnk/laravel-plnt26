@@ -1,0 +1,38 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Documentation",
+        "description": "Public API documentation.",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/v1/health": {
+            "get": {
+                "tags": [
+                    "System"
+                ],
+                "summary": "Health check",
+                "operationId": "73c999109736e02df0e89abee9f28156",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {},
+                                "example": {
+                                    "status": "ok"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "System",
+            "description": "System"
+        }
+    ]
+}
