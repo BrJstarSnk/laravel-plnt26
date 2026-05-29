@@ -12,7 +12,7 @@ use OpenApi\Attributes as OA;
 class OpenApi
 {
 	#[OA\Get(
-		path: '/api/v1/health',
+		path: '/api/v1/health', 
 		summary: 'Health check',
 		tags: ['System'],
 		responses: [
